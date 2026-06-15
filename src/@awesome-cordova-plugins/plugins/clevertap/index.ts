@@ -1246,6 +1246,24 @@ export class CleverTap extends AwesomeCordovaNativePlugin {
   }
 
   /**
+   * Returns information about the active A/B experiment variants for the current user.
+   * @returns {Promise<any>}
+   */
+  @Cordova()
+  variants(): Promise<any> {
+    return;
+  }
+
+  /**
+   * Clears any active mute state set by the backend, resuming normal event tracking immediately.
+   * @returns {Promise<any>}
+   */
+  @Cordova()
+  unmute(): Promise<any> {
+    return;
+  }
+
+  /**
    * Adds a callback to be invoked when variables are initialised with server values. Will be called each time new values are fetched.
    * @returns {Promise<any>}
    */
