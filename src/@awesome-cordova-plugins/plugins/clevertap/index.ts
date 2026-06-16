@@ -706,9 +706,11 @@ export class CleverTap extends AwesomeCordovaNativePlugin {
    * Discards inApp notifications until 'resumeInAppNotifications' is called for current session.
    * Automatically resumes InApp notifications display on CleverTap shared instance creation.
    * Pending inApp notifications are not displayed.
+   * @param {boolean} dismissInAppIfVisible - If true, also dismisses any currently visible InApp notification.
+   * @returns {Promise<any>}
    */
   @Cordova()
-  discardInAppNotifications(): Promise<any> {
+  discardInAppNotifications(dismissInAppIfVisible?: boolean): Promise<any> {
     return;
   }
 
@@ -1242,6 +1244,24 @@ export class CleverTap extends AwesomeCordovaNativePlugin {
    */
   @Cordova()
   getVariables(): Promise<any> {
+    return;
+  }
+
+  /**
+   * Returns information about the active A/B experiment variants for the current user.
+   * @returns {Promise<any>}
+   */
+  @Cordova()
+  variants(): Promise<any> {
+    return;
+  }
+
+  /**
+   * Clears any active mute state, resuming normal event tracking and network operations immediately.
+   * @returns {Promise<any>}
+   */
+  @Cordova()
+  unmute(): Promise<any> {
     return;
   }
 
